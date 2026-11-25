@@ -4,7 +4,7 @@ function Header() {
 
     return (
         <header className={style.header}>
-            <h1>Travel Agency</h1>
+            <h1 className={style.logo}>Travel Agency</h1>
             <nav className ={style.nav}>
                 <NavLink 
                 to="/" 
@@ -24,7 +24,7 @@ function Header() {
                     Connexion
                 </NavLink>
             </nav>
-             <Link to="/reservation">
+             <Link to="/reservation" className={style.reserve}>
                     Réservation
                 </Link>
         </header>
